@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit movie</title>
+</head>
+<body>
+    <h1>Modification du film : {{title}}</h1>
+    <form action="/edit-movie/{{id}}" method="get">
+        <label for="iidentifiant">Id : </label>
+         <input type="text"  id="identifiant" name="id" value="{{id}}" size="50"> <br>
+        <label for="">Titre : </label>
+         <input type="text"  id="title" name="title" value="{{title}}" size="50"> <br>
+         <label for="year">Year : </label>
+        <input type="number" id="year" name="year" value="{{year}}" size="50"><br>
+        <label for="actors">Actors : </label>
+         <input type="text"  id="actors" name="actors" value="{{actors}}" size="50"><br>
+        <label for="plot">Plot : </label>
+        <input type="text" id="plot" name="plot" value="{{plot}}" size="50"><br>
+        <label for="poster">Poster : </label>
+       <input type="text"  id="poster" name="poster" value="{{poster}}" size="70"><br>
+
+        <input id="ajouter" type="submit" value="Modifier les information du film"><br>
+    </form>
+</body>
+</html>
